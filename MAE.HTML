@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-image: url('IMAGEM2.jpg'); /* Define a imagem de fundo */
+            background-repeat: no-repeat; /* Evita que a imagem de fundo seja repetida */
+            background-size: cover; /* Redimensiona a imagem de fundo para cobrir todo o corpo */
+        }
+
+       
+        /* Estilos adicionais podem ser adicionados aqui */
+        header {
+            background-color: rgba(207, 92, 140, 0.479); /* Cor de fundo do cabeçalho com transparência */
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-family: "Wonder", sans-serif; /* Define a fonte para o título */
+            font-weight: bold; /* Deixa o texto em negrito */
+            font-size: 36px; /* Tamanho da fonte */
+            color: white; /* Cor branca */
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        form {
+            margin-bottom: 10px;
+        }
+
+        textarea {
+            width: 100%;
+            height: 100px;
+            resize: none;
+            margin-bottom: 10px;
+            padding: 5px;
+            border: 1px solid #ccc;
+            background-color: rgba(255, 255, 255, 0.314); /* Cor de fundo do campo de entrada com transparência */
+        }
+
+        button {
+            padding: 5px 10px;
+            background-color: rgba(200, 17, 121, 0.529); /* Cor de fundo do botão com transparência */
+            color: #ece9ec;
+            border: none;
+            cursor: pointer;
+        }
+
+        #lista-dicas {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #lista-dicas li {
+            background-color: rgba(227, 147, 207, 0.482); /* Cor de fundo das dicas com transparência */
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #f2f2f297; /* Cor de fundo do rodapé */
+            padding: 20px;
+            text-align: center;
+        }
+
+        .quem-somos {
+            max-width: 800px; /* Largura máxima do conteúdo */
+            margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
+            text-align: left; /* Alinhamento do texto */
+        }
+
+        .quem-somos h3 {
+            color: #333; /* Cor do título */
+        }
+
+        .quem-somos p {
+            color: #00000082; /* Cor do texto */
+            line-height: 1.5; /* Espaçamento entre linhas */
+        }
+
+        .telefones-uteis {
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        .telefones-uteis h3 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .telefones-uteis ul {
+            padding: 0;
+        }
+
+        .telefones-uteis li {
+            list-style: none;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        
+
+        <header class="header-with-image">
+            <div class="header-content">
+                <h1></h1>
+                <form id="search-form">
+            <input type="text" id="search-input" placeholder="Pesquisar...">
+            <button type="submit">Buscar</button>
+        </form>
+     
+    </header>
+    <p class="texto-bonito">Seja bem-vinda ao espaço onde mães compartilham suas experiências, aprendem umas com as outras e constroem uma comunidade de apoio.</p>
+
+       <p><b>Sempre é bom procurar a ajuda de um profissional da área , pois nem todas as dicas servem para todos, principalmente as relacionadas à saúde que devem ser tratadas por especialistas ! </b></p>
+    <main>
+        <section id="dicas">
+            <h2>Compartilhe suas dicas:</h2>
+            <form id="dica-form">
+                <textarea id="dica-text" placeholder="Digite sua dica aqui..."></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+        <section id="dicas-lista">
+            <h2>Dicas compartilhadas:</h2>
+            <ul id="lista-dicas">
+                <!-- Aqui as dicas serão adicionadas dinamicamente -->
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <div class="quem-somos">
+            <h3>Quem Somos</h3>
+            <p>Somos um grupo da Faculdade UNIVESP, que estamos criando este site sem fins lucrativos para o nosso projeto integrador. Nosso objetivo é ajudar as mães de primeira viagem com dicas de mães para mães, com a finalidade de ter um contato mais humano e interativo entre as mães.</p>
+            <h3>Agradecemos ao Studio Mayara Mendes pelo apoio e confiança em nosso projeto!</h3>
+        </div>
+        <div class="telefones-uteis">
+            <h3>Telefones Úteis para Mães em São Paulo:</h3>
+            <li>Bombeiros: 193</li>
+            <li>Emergência: 192</li>
+            <li>Polícia: 190</li>
+            <h4>Região Sul:</h4>
+            <ul>
+                
+                <li>° Hospitais Maternidades: Hospital Municipal Maternidade Interlagos - (11) 5832-5093</li>
+            </ul>
+            <h4>Região Leste:</h4>
+            <ul>
+               
+                <li>° Hospitais Maternidades: Hospital Maternidade Leonor Mendes de Barros - (11) 2692-7070</li>
+            </ul>
+            <h4>Região Oeste:</h4>
+            <ul>
+                    
+                    <li>° Hospitais Maternidades: Hospital Maternidade Pérola Byington - (11) 3248-8000</li>
+                </ul>
+                <h4>Outras Regiões:</h4>
+                <ul>
+                   
+                   
+                    <li>° Hospitais Maternidades: Hospital e Maternidade Santa Joana - (11) 5080-2000</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Adicionando a imagem secundária -->
+        <div class="imagem-secundaria"></div>
+    </footer>
+    
+        <script src="script.js"></script>
+        
+        <button onclick="confirmarSenha()">Limpar Dicas</button>
+
+        <script>
+            function confirmarSenha() {
+                var senha = prompt("Digite a senha para limpar as dicas:");
+                if (senha === "univesp1234") {
+                    limparDicas();
+                } else {
+                    alert("Senha incorreta. Tente novamente.");
+                }
+            }
+    
+            function limparDicas() {
+                // Sua lógica para limpar as dicas aqui
+                var listaDicas = document.getElementById('lista-dicas');
+                listaDicas.innerHTML = ''; // Limpa o conteúdo da lista de dicas
+                localStorage.removeItem('dicas'); // Remove as dicas salvas no armazenamento local
+            }
+        </script>
+    </body>
+    </html>
+
+    </body>
+    </html>
+    
