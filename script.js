@@ -127,3 +127,99 @@ searchForm.addEventListener('submit', (e) => {
 
 // Carregar as dicas ao carregar a página
 loadDicasFromStorage();
+
+function addDicaToList(dicaText) {
+    console.log("Adicionando dica:", dicaText);
+    const li = document.createElement('li');
+    li.textContent = dicaText;
+    listaDicas.appendChild(li);
+}
+
+function searchDicas(term) {
+    const dicas = listaDicas.getElementsByTagName('li');
+    const dicasVisiveis = Array.from(dicas).filter((dica) => {
+        const text = dica.textContent.toLowerCase();
+        const isVisible = text.includes(term);
+        dica.style.display = isVisible ? 'block' : 'none';
+        return isVisible;
+    });
+
+    if (term === '') {
+        showAllDicas(); // Mostra todas as dicas se nenhum termo de busca foi digitado
+        return;
+    }
+
+    if (dicasVisiveis.length === 0) {
+        const dicasDiretas = document.querySelectorAll('.dica-postada-diretamente p');
+        Array.from(dicasDiretas).forEach((dica) => {
+            const text = dica.textContent.toLowerCase();
+            const dicaContainer = dica.closest('.dica-postada-diretamente');
+            const isVisible = text.includes(term);
+            dicaContainer.style.display = isVisible ? 'block' : 'none';
+            if (isVisible) {
+                dicasVisiveis.push(dicaContainer);
+            }
+        });
+
+        if (dicasVisiveis.length === 0) {
+            alert('Desculpe, dica não encontrada.');
+            location.reload(); // Recarrega a página para mostrar todas as dicas novamente
+        }
+    }
+}
+
+
+
+
+
+// Função para limpar todas as dicas
+function limparDicas() {
+    listaDicas.innerHTML = ''; // Remove todos os elementos filhos da lista de dicas
+    localStorage.removeItem('dicas'); // Remove as dicas do armazenamento local
+}
+
+// Para salvar as dicas
+function saveDicasToStorage() {
+    const dicasArray = Array.from(listaDicas.getElementsByTagName('li')).map(li => li.textContent.trim());
+    localStorage.setItem('dicas', JSON.stringify(dicasArray));
+}
+
+// Para recuperar as dicas
+function loadDicasFromStorage() {
+    const dicasArray = JSON.parse(localStorage.getItem('dicas')) || [];
+    dicasArray.forEach(dica => {
+        addDicaToList(dica);
+    });
+}
+
+dicaForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const dicaText = dicaInput.value.trim();
+    if (dicaText !== '') {
+        addDicaToList(dicaText);
+        dicaInput.value = '';
+        saveDicasToStorage();
+    }
+});
+
+searchForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const searchTerm = searchInput.value.trim().toLowerCase();
+    if (searchTerm !== '') {
+        searchDicas(searchTerm);
+        searchDicasDiretamente(searchTerm); // Adiciona esta linha para buscar também nas dicas postadas diretamente
+    } else {
+        showAllDicas();
+    }
+});
+
+// Carregar as dicas ao carregar a página
+loadDicasFromStorage();
+
+// Função para redirecionar para a página de vídeos
+function redirectToVideosPage() {
+    window.location.href = "file:///C:/Users/GEORGE%20AUREO/OneDrive/%C3%81rea%20de%20Trabalho/mae%20solida/pagina%20segundaria.html";
+}
+
+// Vincula a função ao evento de clique do botão
+document.getElementById("btnDicas").addEventListener("click", redirectToVideosPage);

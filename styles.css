@@ -138,3 +138,198 @@ footer {
     color: #00000082;
     line-height: 1.5;
 }
+
+* Definindo estilos para o corpo */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-image: url('IMAGEM2.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+/* Definindo estilos para a imagem secundária */
+.imagem-secundaria {
+    background-image: url('imagemrodape.jpeg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 200px;
+    opacity: 0.5;
+}
+
+/* Estilos para o cabeçalho com imagem */
+.header-with-image {
+    position: relative;
+    background-image: url('imagemrodape.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    opacity: 0.5;
+}
+
+/* Estilos para o conteúdo do cabeçalho */
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* Estilos para o título do cabeçalho */
+.header-content h1 {
+    margin: 0;
+    font-family: "Wonder", sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    color: rgb(0, 0, 0);
+}
+
+/* Estilos para o formulário de pesquisa */
+#search-form {
+    margin-top: 20px;
+    text-align: center; /* Centraliza o formulário de busca */
+}
+
+#search-form input[type="text"],
+#search-form button {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+#search-input {
+    width: 200px;
+}
+
+#search-form button {
+    background-color: rgb(244, 76, 244);
+    color: #ecbcec;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#search-form button:hover {
+    background-color: rgba(29, 22, 24, 0.8);
+    color: #ffffff;
+}
+
+/* Estilos para o texto bonito */
+.texto-bonito {
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: #060606;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para o corpo principal */
+main {
+    padding: 20px;
+}
+
+/* Estilos para os formulários */
+form {
+    margin-bottom: 10px;
+    text-align: center; /* Centraliza os formulários */
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    resize: none;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #cccccc55;
+    background-color: rgba(12, 12, 12, 0.314);
+}
+
+button {
+    display: inline-block; /* Permite a centralização horizontal */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    padding: 5px 10px;
+    background-color: rgba(29, 22, 24, 0.529);
+    color: #ece9ec;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: rgba(29, 22, 24, 0.8);
+    color: #ffffff;
+}
+
+/* Estilos para a lista de dicas */
+#lista-dicas {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+#lista-dicas li {
+    background-color: rgba(213, 213, 213, 0.508);
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Estilos para a dica postada diretamente */
+.dica-postada-diretamente {
+    background-color: #ffffff5e; /* Fundo branco */
+    padding: 15px; /* Espaçamento interno */
+    
+    margin-bottom: 15px; /* Espaçamento inferior */
+    border: 1px solid #ccc; /* Borda */
+    color: #000; /* Cor do texto preto */
+}
+
+
+
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #f2f2f297;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilos para a seção 'Quem Somos' */
+.quem-somos {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.quem-somos h3 {
+    color: #333;
+}
+
+.quem-somos p {
+    color: #00000082;
+    line-height: 1.5;
+}
+/* Estilos para o botão "Dicas em Vídeo" */
+#btnDicas {
+    display: block;
+    margin: 0 auto; /* Centraliza horizontalmente */
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: rgba(29, 22, 24, 0.529);
+    color: #ece9ec;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#btnDicas:hover {
+    background-color: rgba(29, 22, 24, 0.8);
+    color: #ffffff;
+}

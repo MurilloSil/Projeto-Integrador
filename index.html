@@ -3,108 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>maesolidaria</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        body {
-            background-image: url('IMAGEM2.jpg'); /* Define a imagem de fundo */
-            background-repeat: no-repeat; /* Evita que a imagem de fundo seja repetida */
-            background-size: cover; /* Redimensiona a imagem de fundo para cobrir todo o corpo */
-        }
+       
+        
 
        
-        /* Estilos adicionais podem ser adicionados aqui */
-        header {
-            background-color: rgba(207, 92, 140, 0.479); /* Cor de fundo do cabeçalho com transparência */
-            padding: 20px;
-            text-align: center;
-        }
-
-        h1 {
-            margin: 0;
-            font-family: "Wonder", sans-serif; /* Define a fonte para o título */
-            font-weight: bold; /* Deixa o texto em negrito */
-            font-size: 36px; /* Tamanho da fonte */
-            color: white; /* Cor branca */
-        }
-
-        main {
-            padding: 20px;
-        }
-
-        form {
-            margin-bottom: 10px;
-        }
-
-        textarea {
-            width: 100%;
-            height: 100px;
-            resize: none;
-            margin-bottom: 10px;
-            padding: 5px;
-            border: 1px solid #ccc;
-            background-color: rgba(255, 255, 255, 0.314); /* Cor de fundo do campo de entrada com transparência */
-        }
-
-        button {
-            padding: 5px 10px;
-            background-color: rgba(200, 17, 121, 0.529); /* Cor de fundo do botão com transparência */
-            color: #ece9ec;
-            border: none;
-            cursor: pointer;
-        }
-
-        #lista-dicas {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        #lista-dicas li {
-            background-color: rgba(227, 147, 207, 0.482); /* Cor de fundo das dicas com transparência */
-            padding: 10px;
-            margin-bottom: 10px;
-        }
-
-        footer {
-            background-color: #f2f2f297; /* Cor de fundo do rodapé */
-            padding: 20px;
-            text-align: center;
-        }
-
-        .quem-somos {
-            max-width: 800px; /* Largura máxima do conteúdo */
-            margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
-            text-align: left; /* Alinhamento do texto */
-        }
-
-        .quem-somos h3 {
-            color: #333; /* Cor do título */
-        }
-
-        .quem-somos p {
-            color: #00000082; /* Cor do texto */
-            line-height: 1.5; /* Espaçamento entre linhas */
-        }
-
-        .telefones-uteis {
-            text-align: left;
-            margin-top: 20px;
-        }
-
-        .telefones-uteis h3 {
-            font-size: 24px;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-
-        .telefones-uteis ul {
-            padding: 0;
-        }
-
-        .telefones-uteis li {
-            list-style: none;
-            margin-bottom: 5px;
-        }
+        
     </style>
 </head>
 <body>
@@ -117,13 +23,20 @@
                 <form id="search-form">
             <input type="text" id="search-input" placeholder="Pesquisar...">
             <button type="submit">Buscar</button>
+
         </form>
      
     </header>
     <p class="texto-bonito">Seja bem-vinda ao espaço onde mães compartilham suas experiências, aprendem umas com as outras e constroem uma comunidade de apoio.</p>
 
-       <p><b>Sempre é bom procurar a ajuda de um profissional da área , pois nem todas as dicas servem para todos, principalmente as relacionadas à saúde que devem ser tratadas por especialistas ! </b></p>
-    <main>
+   
+       <p><b><center>Sempre é bom procurar a ajuda de um profissional da área , pois nem todas as dicas servem para todos, principalmente as relacionadas à saúde que devem ser tratadas por especialistas ! </center></b></p>
+       
+       
+<a href="index2.html"><center><button type= "submit">DICAS EM VIDEO</button></a></center>
+
+
+       <main>
         <section id="dicas">
             <h2>Compartilhe suas dicas:</h2>
             <form id="dica-form" action="inserir_dica.php" method="post">
@@ -132,10 +45,98 @@
             </form>
         </section>
         <section id="dicas-lista">
-            <h2>Dicas compartilhadas:</h2>
+            
             <ul id="lista-dicas">
                 <!-- Aqui as dicas serão adicionadas dinamicamente -->
             </ul>
+        </section>
+            <h2><CENTER>Dicas compartilhadas:</center></h2>
+            <ul id="lista-dicas">
+                <!-- Aqui as dicas serão adicionadas dinamicamente -->
+            </ul>
+            <!-- Adicionando a dica diretamente no HTML com uma classe específica -->
+    <div class="dica dica-postada-diretamente">
+                <!-- Dica 1 -->
+                <li class="dica-postada-diretamente"><p>Amamentar é um momento especial de conexão com o bebê, lembre-se de manter uma postura confortável durante a amamentação.</p></li>
+                <!-- Dica 2 -->
+                <li class="dica-postada-diretamente"><p>Quando o bebê estiver dormindo, certifique-se de que o ambiente esteja seguro, evitando cobertores soltos e travesseiros ao redor.</p></li>
+                <!-- Dica 3 -->
+                <li class="dica-postada-diretamente"><p>Para acalmar o bebê durante cólicas, experimente realizar movimentos suaves de massagem na barriguinha com óleo de bebê.</p></li>
+                <!-- Dica 4 -->
+                <li class="dica-postada-diretamente"><p>Manter um ambiente tranquilo e com luz suave pode ajudar o bebê a relaxar e dormir melhor durante a noite.</p></li>
+                <!-- Dica 5 -->
+                <li class="dica-postada-diretamente"><p>É importante estar atento aos sinais de fome e saciedade do bebê para garantir uma alimentação adequada e evitar desconfortos.</p></li>
+                        <!-- Dica 1 -->
+                        <li class="dica-postada-diretamente"><p>. <strong>Alimentação:</strong><br>
+                           - Se estiver amamentando, procure posicionar o bebê corretamente para garantir uma pega eficaz.<br>
+                           - Se estiver usando mamadeiras, escolha uma que imite o formato do mamilo materno.<br>
+                           - Esteja atenta aos sinais de fome do bebê e alimente-o sempre que necessário.</p></li>
+                        <!-- Dica 2 -->
+                        <li class="dica-postada-diretamente"><p>. <strong>Sono:</strong><br>
+                           - Estabeleça uma rotina de sono suave desde cedo, ajudando o bebê a distinguir entre dia e noite.<br>
+                           - Crie um ambiente tranquilo e escuro na hora de dormir para promover um sono mais tranquilo.</p></li>
+                        <!-- Dica 3 -->
+                        <li class="dica-postada-diretamente"><p>. <strong>Higiene:</strong><br>
+                           - Mantenha o bebê limpo e seco, trocando as fraldas regularmente.<br>
+                           - Lave bem as mãos antes de manusear o bebê para evitar a propagação de germes.</p></li>
+                        <!-- Dica 4 -->
+                        <li class="dica-postada-diretamente"><p>. <strong>Cuidados com o umbigo:</strong><br>
+                           - Limpe delicadamente o coto umbilical com álcool a 70% até que caia naturalmente.<br>
+                           - Evite cobrir o umbigo com a fralda para permitir que o ar circule livremente.</p></li>
+                        <!-- Dica 5 -->
+                        <li class="dica-postada-diretamente"><p>. <strong>Contato pele a pele:</strong><br>
+                           - Pratique o contato pele a pele com o bebê, o que ajuda a promover o vínculo e a regulação da temperatura corporal.</p></li>
+                        <!-- Dica 6 -->
+                        <li class="dica-postada-diretamente"><p>. <strong>Segurança:</strong><br>
+                           - Sempre coloque o bebê para dormir de barriga para cima, em um colchão firme e sem travesseiros ou cobertores soltos ao redor.<br>
+                           - Mantenha o ambiente de sono do bebê livre de objetos soltos, como brinquedos de pelúcia.</p></li>
+                        <!-- Dica 7 -->
+                        <li class="dica-postada-diretamente"><p>. <strong>Monitoramento da saúde:</strong><br>
+                           - Fique atenta aos sinais de desconforto ou doença, como febre, letargia ou dificuldade para respirar.<br>
+                           - Mantenha as consultas de acompanhamento com o pediatra do bebê em dia.</p></li>
+                        <!-- Dica 8 -->
+                        <li class="dica-postada-diretamente"><p>. <strong>Banhos:</strong><br>
+                           - Dê banhos curtos e suaves ao bebê, utilizando produtos de limpeza suaves e específicos para recém-nascidos.<br>
+                           - Mantenha a temperatura da água morna e verifique sempre a temperatura ambiente para evitar que o bebê sinta frio.</p></li>
+                        <!-- Dica 9 -->
+                        <li class="dica-postada-diretamente"><p>. <strong>Apoio emocional:</strong><br>
+                           - Lembre-se de que é normal sentir-se sobrecarregada às vezes. Não hesite em pedir ajuda quando necessário, seja de familiares, amigos ou profissionais de saúde.</p></li>
+                        <!-- Dica 10 -->
+                        <li class="dica-postada-diretamente"><p>. <strong>Confie nos seus instintos:</strong><br>
+                            - Você conhece melhor o seu bebê do que ninguém. Confie nos seus instintos e faça o que achar melhor para o seu filho.</p></li>
+                   <li class="dica-postada-diretamente"><p>O primeiro banho do bebê recém-nascido pode parecer um pouco assustador no início, mas com um pouco de preparação e cuidado, você pode torná-lo uma experiência tranquila e agradável para você e para o bebê. Aqui estão algumas dicas para ajudar:</p>
+
+                    <p>Escolha o momento certo: Tente escolher um momento em que o bebê esteja calmo e alerta, mas não com fome ou muito cansado. Muitos pais preferem dar o primeiro banho do bebê quando estão mais relaxados e têm tempo suficiente para se concentrar completamente no bebê.</p>
+                    <p>Prepare o ambiente: Certifique-se de que o local onde você vai dar o banho está aquecido e livre de correntes de ar. Tenha à mão todos os itens necessários, como toalhas macias, sabonete neutro, shampoo para bebês, uma bacia com água morna (aproximadamente 37°C), uma fralda limpa e roupas limpas para vestir o bebê depois do banho.</p>
+                    <p>Seja gentil e suave: Segure o bebê com firmeza, mas com cuidado, e apoie a cabeça e o pescoço durante todo o banho. Use uma mão para lavar o bebê e a outra para segurá-lo. Comece lavando o rosto do bebê com um pano úmido, e depois lave o corpo com cuidado, começando pelas áreas menos sensíveis, como os braços e as pernas, e depois lavando as áreas mais sensíveis, como o rosto, o pescoço e a área genital por último.</p>
+                    <p>Use produtos suaves: Use apenas sabonete neutro e shampoo específicos para bebês, para evitar irritações na pele delicada do bebê. Certifique-se de enxaguar bem o bebê para remover completamente o sabonete.</p>
+                   <p>Mantenha a calma: Tente manter-se calmo e relaxado durante todo o processo, pois os bebês podem sentir a ansiedade dos pais.</p>
+                   <p> Fale com o bebê com uma voz suave e acalme-o com carícias gentis, se necessário.</p>
+                    <p>Seque e vista o bebê rapidamente: Após o banho, seque o bebê com uma toalha macia, dando atenção especial às dobras da pele.</p>
+                    <p> Em seguida, vista-o rapidamente para evitar que ele esfrie.</p>
+                    Lembre-se de que o primeiro banho do bebê é uma experiência de aprendizado para você e para o bebê, então não se preocupe se não sair perfeito. Com o tempo, você se sentirá mais confiante e confortável com o processo.</p><li>
+                       <li class="dica-postada-diretamente">
+                        <p>As cólicas podem ser bastante desconfortáveis para os bebês, mas há algumas estratégias que podem ajudar a aliviar o desconforto. Aqui está uma dica para lidar com cólicas em bebês:</p>
+
+<p>Experimente a massagem abdominal: Uma massagem suave na barriga do bebê pode ajudar a aliviar o desconforto das cólicas. Para fazer isso, deite o bebê de costas em um local macio e quente. Coloque um pouco de óleo ou loção suave nas mãos e esfregue-as para aquecê-las. Em seguida, comece a massagear suavemente a barriga do bebê em movimentos circulares no sentido horário, seguindo o caminho do intestino. Preste atenção à reação do bebê e ajuste a pressão conforme necessário. A massagem abdominal pode ajudar a relaxar os músculos abdominais e aliviar o desconforto das cólicas.</p>
+
+<p>Além da massagem abdominal, outras técnicas como a aplicação de calor suave na barriga do bebê, a utilização de técnicas de conforto como balançar suavemente o bebê ou embrulhá-lo em um pano macio também podem ser úteis para aliviar as cólicas. No entanto, é importante sempre verificar com um pediatra antes de tentar qualquer nova técnica para garantir que seja segura e apropriada para o seu bebê.</p>
+
+                       </li>
+                    
+                    
+                    
+                    
+                    </ul>
+                </section>
+                
+            </ul>
+        </section>
+        
+    </div>
+
+    </center>
+    </div>
         </section>
     </main>
     <footer>
@@ -202,4 +203,3 @@
 
     </body>
     </html>
-    
