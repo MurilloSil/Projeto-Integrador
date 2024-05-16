@@ -1,5 +1,5 @@
 <?php
-$servername = "mae-solidaria.cb8wo6yuydmd.us-east-2.rds.amazonaws.com"; // endereço do servidor MySQL
+$servername = "maesolo.ctgwoc8ughyu.us-east-1.rds.amazonaws.com"; // endereço do servidor MySQL
 $username = "admin"; // nome de usuário do MySQL
 $password = "univesp123"; // senha do MySQL
 $dbname = "mae_solo"; // nome do banco de dados
