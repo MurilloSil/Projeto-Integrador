@@ -1,16 +1,37 @@
 <?php
-include 'conexao.php';
+$servername = "localhost"; // endereço do servidor MySQL
+$username = "root"; // nome de usuário do MySQL
+$password = "univesp123"; // senha do MySQL
+$dbname = "mae_solidaria"; // nome do banco de dados
+$port = 3306; // porta do MySQL
+
+// Criar conexão
+$conn = new mysqli($servername, $username, $password, $dbname, $port);
+
+// Verificar conexão
+if ($conn->connect_error) {
+    die("Erro na conexão com o banco de dados: " . $conn->connect_error);
+} else {
+    echo "Conexão bem-sucedida!";
+}
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $usuario = $_POST["usuario"];
     $resposta = $_POST["resposta"];
 
-    $sql = "INSERT INTO respostas_forum (usuario, resposta) VALUES ('$usuario', '$resposta')";
+    // Usar prepared statements para prevenir SQL injection
+    $stmt = $conn->prepare("INSERT INTO respostas_forum (usuario, resposta) VALUES (?, ?)");
+    $stmt->bind_param("ss", $usuario, $resposta);
 
-    if ($conn->query($sql) === TRUE) {
+    if ($stmt->execute() === TRUE) {
         echo "Resposta enviada com sucesso!";
     } else {
-        echo "Erro ao enviar resposta: " . $conn->error;
+        echo "Erro ao enviar resposta: " . $stmt->error;
     }
+
+    $stmt->close();
 }
+
+$conn->close();
 ?>
+
