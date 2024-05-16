@@ -12,6 +12,19 @@
             "name": "mae solidaria",
             "database": "mae_solidaria",
             "username": "root"
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "mae-solidaria.cb8wo6yuydmd.us-east-2.rds.amazonaws.com",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "mae_solo",
+            "database": "mae_solo",
+            "username": "admin"
         }
     ]
 }

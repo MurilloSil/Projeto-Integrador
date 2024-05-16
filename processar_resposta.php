@@ -1,8 +1,8 @@
 <?php
-$servername = "localhost"; // endereço do servidor MySQL
-$username = "root"; // nome de usuário do MySQL
+$servername = "mae-solidaria.cb8wo6yuydmd.us-east-2.rds.amazonaws.com"; // endereço do servidor MySQL
+$username = "admin"; // nome de usuário do MySQL
 $password = "univesp123"; // senha do MySQL
-$dbname = "mae_solidaria"; // nome do banco de dados
+$dbname = "mae_solo"; // nome do banco de dados
 $port = 3306; // porta do MySQL
 
 // Criar conexão
